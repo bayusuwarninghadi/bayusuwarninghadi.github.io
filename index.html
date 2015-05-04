@@ -4,18 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <title>Yii2 Ecommerce</title>
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/site-min.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">
-            <i class="fa fa-home"></i>
-        </a>
+        <a class="pure-menu-heading" href="">#yii2</a>
         <ul class="pure-menu-list">
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
             <li class="pure-menu-item"><a href="#apps" class="pure-menu-link">Apps</a></li>
@@ -29,7 +28,7 @@
         <h1 class="splash-head">#yii2</h1>
 
         <p class="splash-subhead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Building e-commerce website with yii2 framework
         </p>
 
         <p>
@@ -39,63 +38,56 @@
 </div>
 <div class="content-wrapper">
     <div class="content" id="apps">
-        <h2 class="content-head is-center">Our Apps</h2>
+        <h2 class="content-head center">Our Apps</h2>
 
         <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket fa-fw"></i>
-                    Get Started Quickly
-                </h3>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="bg-warning app-box">
+                    <h2 class="content-subhead">
+                        <i class="fa fa-rocket fa-fw"></i> Simple
+                    </h2>
 
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+                    <p>
+                        Simple CMS Design, do what you want.
+                    </p>
+                </div>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-mobile fa-fw"></i>
-                    Responsive Layouts
-                </h3>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="app-box bg-dark">
+                    <h2 class="content-subhead">
+                        <i class="fa fa-mobile fa-fw"></i> Responsive
+                    </h2>
 
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+                    <p>
+                        Building with heart. Using Bootstrap, support for all your device
+                    </p>
+                </div>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large fa-fw"></i>
-                    Modular
-                </h3>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="app-box bg-error">
+                    <h2 class="content-subhead">
+                        <i class="fa fa-file-excel-o fa-fw"></i> Analytic
+                    </h2>
 
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+                    <p>
+                        Manage All transaction or export all to the files.
+                    </p>
+                </div>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-check-square-o fa-fw"></i>
-                    Plays Nice
-                </h3>
-
-                <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                </p>
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <div class="app-box bg-success">
+                    <h2 class="content-subhead">
+                        <i class="fa fa-wrench fa-fw"></i> Maintenance
+                    </h2>
+                    <p>
+                        It's a Nice Bonus, but It May Not Always Save You Money, Get Free Maintenance for 1 year.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-dark l-box-lrg pure-g" id="about">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-facebook"></i>
-            </span>
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-twitter"></i>
-            </span>
-        </div>
+    <div class="bg-dark l-box-lg pure-g" id="about">
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
             <h2 class="content-head content-head-ribbon">About Us</h2>
 
@@ -106,46 +98,57 @@
                 consequat. Duis aute irure dolor.
             </p>
         </div>
+        <div class="l-box-lg center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <span class="fa-stack fa-5x">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-building-o"></i>
+            </span>
+            <span class="fa-stack fa-5x">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-shopping-cart"></i>
+            </span>
+        </div>
     </div>
-    <div class="content" id="contact">
-        <h2 class="content-head is-center">Touch Us</h2>
-
+    <div id="contact">
+        <h2 class="content-head center">Touch Us</h2>
         <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
-                        <label for="email">Your Email</label>
-                        <input id="email" type="email" name="email" class="pure-input-rounded" placeholder="Your Email">
-
-                        <label for="message">Your Password</label>
-                        <textarea id="message" name="message" class="pure-input-rounded" placeholder="Your Password"></textarea>
-
-                        <button type="submit" class="pure-button">Submit</button>
-                    </fieldset>
-                </form>
+            <div class="l-box-lg pure-u-1 pure-u-md-2-5">
+                <div class="center">
+                    <a href="http://twitter.com/bay_oz">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="http://facebook.com/bayusuwarninghadi">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-inverse fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="mailto:bayusuwarninghadi@gmail.com">
+                        <span class="fa-stack fa-5x">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-envelope fa-inverse fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
 
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>Contact Us</h4>
-
+            <div class="l-box-lg pure-u-1 pure-u-md-3-5">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
+                    DIPO Business Center 07 BC, Jl. Gatot Subroto Kav 50-52 Jakarta Selatan
                 </p>
 
-                <h4>More Information</h4>
+                <h4><i class="fa fa-map-marker fa-fw"></i> Map</h4>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                <div id="map-canvas" style="height: 300px; background-color: #f5f5f5; border: 1px solid #ddd;"></div>
             </div>
         </div>
     </div>
-    <div class="footer l-box is-center bg-dark">
-        View the source of this layout to learn more. Made with love by the YUI Team.
+    <div class="footer l-box bg-primary">
+        <a href="#"><i class="fa fa-arrow-up fa-fw"></i></a>
+        <small>#Yii2 &copy; 2015</small>
     </div>
 </div>
 </body>
