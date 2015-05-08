@@ -6,17 +6,14 @@
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
     <title>Yii2 Ecommerce</title>
     <link rel="stylesheet" href="css/pure-min.css">
-    <link rel="stylesheet" href="css/grids-responsive-min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/site-min.css">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">#yii2</a>
+        <a class="pure-menu-heading" href="#">#yii2</a>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
             <li class="pure-menu-item"><a href="#apps" class="pure-menu-link">Apps</a></li>
             <li class="pure-menu-item"><a href="#about" class="pure-menu-link">About</a></li>
             <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact</a></li>
@@ -25,7 +22,7 @@
 </div>
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">#yii2</h1>
+        <h1 class="splash-head">#yii2 #ecommerce</h1>
 
         <p class="splash-subhead">
             Building e-commerce website with yii2 framework
@@ -37,15 +34,13 @@
     </div>
 </div>
 <div class="content-wrapper">
-    <div class="content" id="apps">
-        <h2 class="content-head center">Our Apps</h2>
+    <div class="content l-box" id="apps">
+        <h2 class="content-head center">Apps</h2>
 
         <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div class="bg-warning app-box">
-                    <h2 class="content-subhead">
-                        <i class="fa fa-rocket fa-fw"></i> Simple
-                    </h2>
+                <div class="app-box">
+                    <h2 class="content-subhead">Simple</h2>
 
                     <p>
                         Simple CMS Design, do what you want.
@@ -53,10 +48,8 @@
                 </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div class="app-box bg-dark">
-                    <h2 class="content-subhead">
-                        <i class="fa fa-mobile fa-fw"></i> Responsive
-                    </h2>
+                <div class="app-box">
+                    <h2 class="content-subhead">Responsive</h2>
 
                     <p>
                         Building with heart. Using Bootstrap, support for all your device
@@ -64,10 +57,8 @@
                 </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div class="app-box bg-error">
-                    <h2 class="content-subhead">
-                        <i class="fa fa-file-excel-o fa-fw"></i> Analytic
-                    </h2>
+                <div class="app-box">
+                    <h2 class="content-subhead">Analytic</h2>
 
                     <p>
                         Manage All transaction or export all to the files.
@@ -75,10 +66,9 @@
                 </div>
             </div>
             <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <div class="app-box bg-success">
-                    <h2 class="content-subhead">
-                        <i class="fa fa-wrench fa-fw"></i> Maintenance
-                    </h2>
+                <div class="app-box">
+                    <h2 class="content-subhead">Maintenance</h2>
+
                     <p>
                         It's a Nice Bonus, but It May Not Always Save You Money, Get Free Maintenance for 1 year.
                     </p>
@@ -87,9 +77,14 @@
         </div>
     </div>
 
-    <div class="bg-dark l-box-lg pure-g" id="about">
+    <div class="bg-dark l-box pure-g" id="about">
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <div class="l-box center" style="font-size: 50px">
+                &hearts; &hearts; &hearts;
+            </div>
+        </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-            <h2 class="content-head content-head-ribbon">About Us</h2>
+            <h2 class="content-head">About Us</h2>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -98,60 +93,32 @@
                 consequat. Duis aute irure dolor.
             </p>
         </div>
-        <div class="l-box-lg center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-building-o"></i>
-            </span>
-            <span class="fa-stack fa-5x">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-shopping-cart"></i>
-            </span>
-        </div>
     </div>
-    <div id="contact">
+    <div id="contact" class="l-box">
         <h2 class="content-head center">Touch Us</h2>
         <div class="pure-g">
-            <div class="l-box-lg pure-u-1 pure-u-md-2-5">
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
                 <div class="center">
-                    <a href="http://twitter.com/bay_oz">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-inverse fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="http://facebook.com/bayusuwarninghadi">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square fa-stack-2x"></i>
-                            <i class="fa fa-facebook fa-inverse fa-stack-1x"></i>
-                        </span>
-                    </a>
-                    <a href="mailto:bayusuwarninghadi@gmail.com">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-square fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-inverse fa-stack-1x"></i>
-                        </span>
-                    </a>
+                    <a href="http://twitter.com/bay_oz"><h1>Twitter</h1></a>
+                    <a href="http://facebook.com/bayusuwarninghadi"><h4>Facebook</h4></a>
+                    <a href="http://plus.google.com/u/bayusuwarninghadi"><p>Google +</p></a>
+                    <a href="https://linkedin.com"><h2>LinkedIn</h2></a>
+                    <a href="http://github.com/bayusuwarninghadi"><h1>Github</h1></a>
+                    <a href="mailto:bayusuwarninghadi@gmail.com"><p>Mail Us</hp></a>
                 </div>
             </div>
-
-            <div class="l-box-lg pure-u-1 pure-u-md-3-5">
-                <p>
-                    DIPO Business Center 07 BC, Jl. Gatot Subroto Kav 50-52 Jakarta Selatan
-                </p>
-
-                <h4><i class="fa fa-map-marker fa-fw"></i> Map</h4>
-
+            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+                DIPO Business Center 07 BC, Jl. Gatot Subroto Kav 50-52 Jakarta Selatan
                 <div id="map-canvas" style="height: 300px; background-color: #f5f5f5; border: 1px solid #ddd;"></div>
             </div>
         </div>
     </div>
-    <div class="footer l-box bg-primary">
-        <a href="#"><i class="fa fa-arrow-up fa-fw"></i></a>
+    <div class="footer l-box bg-dark center">
         <small>#Yii2 &copy; 2015</small>
+        <br/>
+        <a href="#">&uparrow;</a>
     </div>
 </div>
 </body>
-<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/site.js"></script>
 </html>
